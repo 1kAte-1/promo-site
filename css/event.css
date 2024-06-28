@@ -1,0 +1,925 @@
+html, body{
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+a{ 
+    color: inherit;
+}
+
+*{
+    box-sizing: border-box;
+    cursor: url(../img/Ellipse-97.svg) 11 11, auto;
+}
+
+@font-face {
+    font-family: 'TT-Prosto-Sans-Trial-Black';
+    font-style: normal;
+    src: url('../fonts/TT-Prosto-Sans-Trial-Black.otf');
+}
+
+@font-face {
+    font-family: 'TT-Prosto-Sans-Trial-Bold';
+    font-style: normal;
+    src: url('../fonts/TT-Prosto-Sans-Trial-Bold.otf');
+}
+
+@font-face {
+    font-family: 'TT-Prosto-Sans-Trial-Light';
+    font-style: normal;
+    src: url('../fonts/TT-Prosto-Sans-Trial-Light.otf');
+}
+
+h1{
+    font-size: 18.5vw;
+    line-height: 19vw;
+    text-transform: uppercase;
+    font-family: 'TT-Prosto-Sans-Trial-Black';
+    font-style: normal;
+}
+
+h2{
+    font-size: 14vw;
+    line-height: 14.7vw;
+    text-transform: uppercase;
+    font-family: 'TT-Prosto-Sans-Trial-Black';
+    font-style: normal;
+}
+
+h3{
+    font-size: 2.4vw;
+    line-height: 2.8vw;
+    text-transform: uppercase;
+    font-family: 'TT-Prosto-Sans-Trial-Black';
+    font-style: normal;
+}
+
+h4{
+    font-size: 5.5vw;
+    line-height: 6vw;
+    text-transform: uppercase;
+    font-family: 'TT-Prosto-Sans-Trial-Black';
+    font-style: normal;
+}
+
+p{
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    font-family: 'TT-Prosto-Sans-Trial-Light';
+    font-style: normal;
+}
+
+/*начало*/
+
+.first-screen-e{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10vw;
+}
+
+.header{
+    width: 93vw;
+    margin-left: 3.5vw;
+    margin-top: 1.9vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.ook{
+    text-decoration: none;
+}
+
+.header-mob{
+    display: none;
+}
+
+#pop-up-m{
+    display: none;
+}
+
+.logo{
+    width: 7.5vw;
+    height: 2.5vw;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.menu-bar-but{
+    width: 46vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 17.4vw;
+}
+
+.list-one{
+    color: #1F598D;
+    margin-bottom: 0.2vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.list-two{
+    color: #1F598D;
+    margin-bottom: 0.2vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.list-three{
+    color: #1F598D;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.but-1{
+    background-color: #FFFFFF;
+    border-radius: 7vw;
+    border: 0.1vw solid #1F598D;
+    color: #1F598D;
+    width: 14.5vw;
+    height: 3vw;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    font-family: 'TT-Prosto-Sans-Trial-Bold';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.mainn-title{
+    margin-left: 1.9vw;
+    color: #1F598D;
+    transition: all 1s ease-in-out;
+}
+
+.mainn-title:hover{
+    color: #86BEFF;
+}
+
+.mainn-title-mob{
+    display: none;
+}
+
+.photo-cloud1_1{
+    position: absolute;
+    z-index: 10;
+    margin-top: -54vw;
+    margin-left: 8vw;
+    width: 19vw;
+    height: 15vw;
+    background-image: url(../img/cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: up-down 3s ease-in-out infinite;
+}
+
+@keyframes up-down {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-1.5vw);}
+    100% {transform: translateY(0);}
+}
+
+.photo-cloud2_1{
+    position: absolute;
+    z-index: 10;
+    margin-top: -33vw;
+    margin-left: 38vw;
+    width: 36.4vw;
+    height: 28.6vw;
+    background-image: url(../img/cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: up-down 3s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+/*второй экран*/
+
+.second-screen-e{
+    width: 100%;
+    height: 35.4vw;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12vw;
+}
+
+.run-line, .run-line1{
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    animation: lines 50s infinite linear;
+    animation-play-state: running;
+}
+
+.run-line:hover, .run-line1:hover{
+    animation-play-state: paused;
+}
+
+@keyframes lines {
+    0% {
+        transform: translate(3%, 0);
+    }
+
+    100% {
+        transform: translate(-79%, 0);
+    }
+}
+
+.pop-up-feedback{
+    display: none;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.color-content{
+  background-color: #1F598D;
+  margin: 6vw auto;
+  padding: 5vh;
+  width: 53vw;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.text-message{
+    width: 33.1vw;
+}
+
+.icon-close{
+    width: 2.6vw;
+    height: 2.6vw;
+    margin-left: 44vw;
+    margin-bottom: 12.7vw;
+    background-image: url(../img/Vector-close.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.blur{
+    filter: blur(0.7vw);
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+#pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body.pop_open {
+    overflow: hidden;
+}
+
+.blur{
+    filter: blur(0.7vw);
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.poster1, .poster1-2, .poster1-3, .poster1-4, .poster1-5, .poster1-6, .poster1-7, .poster1-8, .poster1-9, .poster1-10, .poster1-11, .poster1-12, .poster1-13, .poster1-14, .poster1-15, .poster1-16, .poster1-17, .poster1-18, .poster1-19, .poster1-20, .poster1-21, .poster1-22, .poster1-23, .poster1-24, .poster1-25, .poster1-26, .poster1-27, .poster1-28, .poster1-29, .poster1-30, .poster1-31, .poster1-32, .poster1-33, .poster1-34, .poster1-35, .poster1-36{
+    margin-right: 2vw;
+    height: 35.4vw;
+    width: 23.6vw;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.in-bg{
+    background-image: url(../img/fest1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.color-bg, .color-bg2, .color-bg3, .color-bg4, .color-bg5, .color-bg6, .color-bg7, .color-bg8, .color-bg9, .color-bg10, .color-bg11, .color-bg12, .color-bg13, .color-bg14, .color-bg15, .color-bg16, .color-bg17, .color-bg18, .color-bg19, .color-bg20, .color-bg21, .color-bg22, .color-bg23, .color-bg24, .color-bg25, .color-bg26, .color-bg27, .color-bg28, .color-bg29, .color-bg30, .color-bg31, .color-bg32, .color-bg33, .color-bg34, .color-bg35, .color-bg36{
+    height: 35.4vw;
+    width: 23.6vw;
+    position: absolute;
+    z-index: 10;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    display: none;
+}
+
+.functional-btn, .functional-btn2, .functional-btn3, .functional-btn4, .functional-btn5, .functional-btn6, .functional-btn7, .functional-btn8, .functional-btn9, .functional-btn10, .functional-btn11, .functional-btn12, .functional-btn13, .functional-btn14, .functional-btn15, .functional-btn16, .functional-btn17, .functional-btn18, .functional-btn19, .functional-btn20, .functional-btn21, .functional-btn22, .functional-btn23, .functional-btn24, .functional-btn25, .functional-btn26, .functional-btn27, .functional-btn28, .functional-btn29, .functional-btn30, .functional-btn31, .functional-btn32, .functional-btn33, .functional-btn34, .functional-btn35, .functional-btn36{
+    position: absolute;
+    z-index: 12;
+    margin-top: 2.4vw;
+    margin-left: 1.3vw;
+    color: #1F598D;
+    display: none;
+}
+
+#btn-11, #btn-11-2, #btn-11-3, #btn-11-4, #btn-11-5, #btn-11-6, #btn-11-7, #btn-11-8, #btn-11-9, #btn-11-10, #btn-11-11, #btn-11-12, #btn-11-13, #btn-11-14, #btn-11-15, #btn-11-16, #btn-11-17, #btn-11-18, #btn-11-19, #btn-11-20, #btn-11-21, #btn-11-22, #btn-11-23, #btn-11-24, #btn-11-25, #btn-11-26, #btn-11-27, #btn-11-28, #btn-11-29, #btn-11-30, #btn-11-31, #btn-11-32, #btn-11-33, #btn-11-34, #btn-11-35, #btn-11-36{
+    border-radius: 7vw;
+    border: 0.1vw solid #1F598D;
+    color: #1F598D;
+    height: 3vw;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    font-family: 'TT-Prosto-Sans-Trial-Bold';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7vw;
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+    margin-left: 17.1vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.naming-date{
+    margin-top: 22vw;
+}
+
+.naming{
+    margin-bottom: 1.1vw;
+}
+
+.in-bg2{
+    background-image: url(../img/fest2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg3{
+    background-image: url(../img/fest3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg4{
+    background-image: url(../img/party1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg5{
+    background-image: url(../img/party2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg6{
+    background-image: url(../img/party3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg7{
+    background-image: url(../img/train1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg8{
+    background-image: url(../img/train2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg9{
+    background-image: url(../img/train3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg10{
+    background-image: url(../img/les1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg11{
+    background-image: url(../img/les2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg12{
+    background-image: url(../img/les3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg13{
+    background-image: url(../img/play1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg14{
+    background-image: url(../img/play2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg15{
+    background-image: url(../img/play3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg16{
+    background-image: url(../img/show1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg17{
+    background-image: url(../img/show2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg18{
+    background-image: url(../img/show3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+/*третий*/
+
+.third-screen-e{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12vw;
+    background-color: #1F598D;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 65.1vw;
+}
+
+.name-tit{
+    margin-top: -3.9vw;
+    color: #FFFFFF;
+    z-index: 10;
+    animation: bright 3s ease-in-out infinite;
+}
+
+@keyframes bright {
+    0%{opacity: 100%;}
+    50%{opacity: 20%;}
+    100%{opacity: 100%;}
+}
+
+.name-tit-mob{
+    display: none;
+    animation: bright 3s ease-in-out infinite;
+}
+
+.tot{
+    margin-left: 10.6vw;
+    color: #FFFFFF;
+}
+
+.tot1{
+    margin-left: 22.9vw;
+    color: #FFFFFF;
+}
+
+.tot2{
+    margin-left: 10.6vw;
+    color: #FFFFFF;
+}
+
+.tot3{
+    margin-left: 10.6vw;
+    color: #FFFFFF;
+}
+
+.tot4{
+    margin-left: 19.2vw;
+    color: #FFFFFF;
+}
+
+.wrapper-rule{
+    
+    margin-top: 12.4vw;
+    margin-left: -7vw;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.photo-site{
+    width: 30vw;
+    height: 40.3vw;
+    z-index: 20;
+    background-image: url(../img/phon-sit1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.functional-info{
+    margin-left: 2vw;
+}
+
+.game-site{
+    color: #FFFFFF;
+}
+
+.text-inf{
+    margin-bottom: 29.3vw;
+}
+
+.text-inf-mob{
+    display: none;
+}
+
+.but-3{
+    border-radius: 7vw;
+    border: 0.1vw solid #FFFFFF;
+    color: #FFFDF8;
+    height: 3vw;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    font-family: 'TT-Prosto-Sans-Trial-Bold';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7vw;
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+/*четвертый экран*/
+
+.forth-screen-e{
+    width: 100%;
+    height: 35.4vw;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12vw;
+}
+
+.in-bg19{
+    background-image: url(../img/kids1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg20{
+    background-image: url(../img/kids2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg21{
+    background-image: url(../img/kids3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg22{
+    background-image: url(../img/lecture1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg23{
+    background-image: url(../img/lecture2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg24{
+    background-image: url(../img/lecture3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg25{
+    background-image: url(../img/relax1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg26{
+    background-image: url(../img/relax2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg27{
+    background-image: url(../img/relax3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg28{
+    background-image: url(../img/choice1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg29{
+    background-image: url(../img/choice2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg30{
+    background-image: url(../img/choice3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg31{
+    background-image: url(../img/night1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg32{
+    background-image: url(../img/night2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg33{
+    background-image: url(../img/night3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg34{
+    background-image: url(../img/decor1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg35{
+    background-image: url(../img/decor2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-bg36{
+    background-image: url(../img/decor3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+/*пятый экран*/
+
+.fifth-screen-e{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10vw;
+    background-color: #1F598D;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 65.1vw;
+}
+
+.form-title{
+    margin-top: -4.5vw;
+    color: #FFFFFF;
+    animation: bright 3s ease-in-out infinite;
+}
+
+.form-title-mob{
+    display: none;
+    animation: bright 3s ease-in-out infinite;
+}
+
+.tit1{
+    margin-left: 10vw;
+}
+
+.tit2{
+    margin-left: 20.3vw;
+}
+
+.tit3{
+    margin-left: 10vw;
+}
+
+.tit4{
+    margin-left: 24.9vw;
+}
+
+.tit5{
+    margin-left: 20.3vw;
+}
+
+form{
+    width: 26.6vw;
+    margin-left: 3.3vw;
+    margin-top: 24vw;
+}
+
+select, input{
+    background-color: #1F598D;
+    font-family: 'TT-Prosto-Sans-Trial-Light';
+    font-style: normal;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    width: 26.6vw;
+    margin-bottom: 1.3vw;
+    border-radius: 7vw;
+    border: 0.1vw solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 0.8vw;
+    padding-left: 2.7vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+    outline: none;
+}
+
+input::placeholder{
+    opacity: 0.4;
+    color: #FFFFFF;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../img/Ellipse.svg") 88% / 2% no-repeat;
+}
+
+select::-ms-expand { 
+    display: none; 
+}
+
+select option{
+    background-color: #1F598D;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-1{
+    margin-bottom: 5.7vw;
+}
+
+.but-4{
+    border-radius: 7vw;
+    border: 0.1vw solid #FFFFFF;
+    color: #FFFDF8;
+    height: 3vw;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    font-family: 'TT-Prosto-Sans-Trial-Bold';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7vw;
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+    margin-left: 15.8vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+
+
+/*шестой экран*/
+.footer{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 14.5vw;
+    margin-bottom: 3vw;
+}
+
+.text-end{
+    color: #1F598D;
+    animation: line 2s linear infinite ;
+}
+
+@keyframes line {
+    0% {transform: translateX(-4%);}
+    50% {transform: translateX(5%);}
+    100% {transform: translateX(-4%);}
+}

@@ -1,0 +1,798 @@
+html, body{
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+a{ 
+    color: inherit;
+}
+
+*{
+    box-sizing: border-box;
+    cursor: url(../img/Ellipse-97.svg) 11 11, auto;
+}
+
+@font-face {
+    font-family: 'TT-Prosto-Sans-Trial-Black';
+    font-style: normal;
+    src: url('../fonts/TT-Prosto-Sans-Trial-Black.otf');
+}
+
+@font-face {
+    font-family: 'TT-Prosto-Sans-Trial-Bold';
+    font-style: normal;
+    src: url('../fonts/TT-Prosto-Sans-Trial-Bold.otf');
+}
+
+@font-face {
+    font-family: 'TT-Prosto-Sans-Trial-Light';
+    font-style: normal;
+    src: url('../fonts/TT-Prosto-Sans-Trial-Light.otf');
+}
+
+h1{
+    font-size: 20.9vw;
+    line-height: 21.8vw;
+    font-family: 'TT-Prosto-Sans-Trial-Black';
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 14vw;
+    line-height: 14.7vw;
+    font-family: 'TT-Prosto-Sans-Trial-Black';
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 2.4vw;
+    line-height: 2.8vw;
+    font-family: 'TT-Prosto-Sans-Trial-Black';
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 5.5vw;
+    line-height: 6vw;
+    font-family: 'TT-Prosto-Sans-Trial-Black';
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    font-family: 'TT-Prosto-Sans-Trial-Light';
+    font-style: normal;
+}
+
+/*начало*/
+
+.first-screen{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10vw;
+}
+
+.header{
+    width: 93vw;
+    margin-left: 3.5vw;
+    margin-top: 1.9vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.ook{
+    text-decoration: none;
+}
+
+.header-mob{
+    display: none;
+}
+
+#pop-up-m{
+    display: none;
+}
+
+body.pop_open {
+    overflow: hidden;
+}
+
+.icon-close{
+    width: 2.6vw;
+    height: 2.6vw;
+    margin-left: 44vw;
+    margin-bottom: 12.7vw;
+    background-image: url(../img/Vector-close.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.pop-up-feedback{
+    display: none;
+    position: fixed;
+    z-index: 25;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.logo{
+    width: 7.5vw;
+    height: 2.5vw;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.menu-bar-but{
+    width: 46vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.list-one{
+    color: #1F598D;
+    margin-bottom: 0.2vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.list-two{
+    color: #1F598D;
+    margin-bottom: 0.2vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.list-three{
+    color: #1F598D;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.but-1{
+    background-color: #FFFFFF;
+    border-radius: 7vw;
+    border: 0.1vw solid #1F598D;
+    color: #1F598D;
+    height: 3vw;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    font-family: 'TT-Prosto-Sans-Trial-Bold';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7vw;
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.mainn-title{
+    margin-left: 3.4vw;
+    margin-top: 12.3vw;
+    color: #1F598D;
+    transition: all 1s ease-in-out;
+}
+
+.mainn-title:hover{
+    color: #86BEFF;
+}
+
+.mainn-title-mob{
+    display: none;
+}
+
+.photo-cloud1-1{
+    position: absolute;
+    z-index: 15;
+    margin-top: -56vw;
+    margin-left: 15.7vw;
+    width: 13vw;
+    height: 10.3vw;
+    background-image: url(../img/cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: up-down 3s ease-in-out infinite;
+}
+
+@keyframes up-down {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-1.5vw);}
+    100% {transform: translateY(0);}
+}
+
+.photo-cloud2-1{
+    position: absolute;
+    z-index: 15;
+    margin-top: -36vw;
+    margin-left: 39vw;
+    width: 40vw;
+    height: 33.8vw;
+    background-image: url(../img/cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: up-down 3s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+.photo-cloud31-1{
+    display: none;
+    animation: up-down 3s ease-in-out infinite;
+}
+
+/*второй экран*/
+
+.second-screen{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10vw;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.second-screen-mob{
+    display: none;
+}
+
+.secont-type-inf{
+    margin-left: 3.5vw;
+    margin-right: 4.6vw;
+}
+
+.small-text{
+    color: #1F598D;
+    width: 31vw;
+    margin-bottom: 18vw;
+}
+
+.two-content{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.photo-one-con{
+    width: 15.8vw;
+    height: 19.5vw;
+    background-image: url(../img/00-z.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 2vw;
+}
+
+.text-button{
+    width: 24vw;
+    color: #1F598D;
+}
+
+.but-1{
+    background-color: #FFFFFF;
+    border-radius: 7vw;
+    border: 0.1vw solid #1F598D;
+    color: #1F598D;
+    height: 3vw;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    font-family: 'TT-Prosto-Sans-Trial-Bold';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7vw;
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.fst-b{
+    margin-bottom: 6vw;
+}
+
+.first-text{
+    color: #1F598D;
+    transition: all 1s ease-in-out;
+}
+
+.first-text:hover{
+    color: #86BEFF;
+}
+
+.content-first{
+    width: 42vw;
+    height: 27vw;
+    margin-top: -5.5vw;
+    margin-left: 7.7vw;
+    background-image: url(..//img/e-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo-cloud3-1{
+    position: absolute;
+    z-index: 15;
+    margin-top: 6.5vw;
+    margin-left: 29vw;
+    width: 21.5vw;
+    height: 16.9vw;
+    background-image: url(../img/cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: up-down 3s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+/*третий*/
+
+.third-screen{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10vw;
+    background-color: #1F598D;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 65.1vw;
+}
+
+.name-tit{
+    margin-top: -4.3vw;
+    color: #FFFFFF;
+    margin-left: 8.9vw;
+    z-index: 10;
+    animation: bright 3s ease-in-out infinite;
+}
+
+@keyframes bright {
+    0%{opacity: 100%;}
+    50%{opacity: 20%;}
+    100%{opacity: 100%;}
+    
+}
+
+.name-tit-mob{
+    display: none;
+    animation: bright 3s ease-in-out infinite;
+}
+
+.tito{
+    color: #FFFFFF;
+}
+
+.tito1{
+    margin-left: 25vw;
+    color: #FFFFFF;
+}
+
+.tito2{
+    color: #FFFFFF;
+}
+
+.tito3{
+    color: #FFFFFF;
+}
+
+.tito4{
+    margin-left: 17.6vw;
+    color: #FFFFFF;
+}
+
+.wrapper-rule{
+    
+    margin-top: 14vw;
+    margin-left: -8.5vw;
+    display: flex;
+    flex-wrap: nowrap;
+    /*justify-content: space-between;*/
+    /*width: 45.4vw;*/
+}
+
+.photo-site1{
+    width: 30vw;
+    height: 37.5vw;
+    z-index: 20;
+    background-image: url(../img/sit2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.functional-info{
+    margin-left: 2vw;
+}
+
+.game-site1{
+    color: #FFFFFF;
+    width: 13.9vw;
+}
+
+.text-inf1{
+    margin-bottom: 29.3vw;
+}
+
+.but-3{
+    border-radius: 7vw;
+    border: 0.1vw solid #FFFFFF;
+    color: #FFFDF8;
+    height: 3vw;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    font-family: 'TT-Prosto-Sans-Trial-Bold';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7vw;
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+/*четвертый*/
+
+.forth-screen{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12vw;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.forth-screen-mob{
+    display: none;
+}
+
+.photo-first-block{
+    width: 19.6vw;
+    height: 12.8vw;
+    margin-left: 13.8vw;
+    margin-top: 9.5vw;
+    background-image: url(..//img/d-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-block-pos{
+    position: absolute;
+    z-index: 15;
+    margin-left: 11.25vw;
+    margin-top: 26vw;
+    color: #1F598D;
+    animation: move 5s ease-in infinite;
+}
+
+@keyframes move {
+    0%{transform: translateX(-1.2vw);}
+    50%{transform: translateX(1.2vw);}
+    100%{transform: translateX(-1.2vw);}
+}
+
+.r2{
+    margin-left: 15vw;
+}
+
+.r3{
+    margin-left: 6.6vw;
+}
+
+.r4{
+    margin-left: 38.5vw;
+}
+
+.photo-second-block{
+    margin-left: 17vw;
+}
+
+.one-place{
+    width: 45.8vw;
+    height: 31.4vw;
+    margin-bottom: 2.8vw;
+    background-image: url(../img/k-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.two-place{
+    width: 20.8vw;
+    height: 16vw;
+    margin-left: 25vw;
+    background-image: url(../img/l-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo-cloud4-1{
+    position: absolute;
+    z-index: 15;
+    margin-top: 30.6vw;
+    margin-left: -4.9vw;
+    width: 21.5vw;
+    height: 16.9vw;
+    background-image: url(../img/cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: up-down 3s ease-in-out infinite;
+}
+
+/*пятый*/
+
+.fifth-screen{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12vw;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.fifth-screen-mob{
+    display: none;
+}
+
+.photo-description{
+    margin-right: 2vw;
+    color: #1F598D;
+}
+
+.content-photo-place{
+    width: 48.6vw;
+    height: 31.5vw;
+    margin-right: 2vw;
+    background-image: url(../img/i-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo-place{
+    width: 21.5vw;
+    height: 12.8vw;
+    margin-bottom: 2vw;
+    background-image: url(../img/p-15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-outline{
+    width: 22.2vw;
+}
+
+.description-button{
+    color: #1F598D;
+}
+
+.text-outlines{
+    width: 17.9vw;
+    margin-bottom: 20vw;
+}
+
+.but-5{
+    border-radius: 7vw;
+    border: 0.1vw solid #1F598D;
+    color: #1F598D;
+    height: 3vw;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    font-family: 'TT-Prosto-Sans-Trial-Bold';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7vw;
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+    margin-left: 7.3vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+/*шестой*/
+
+.six-screen{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12vw;
+    display: flex;
+    flex-wrap: nowrap;
+    color: #1F598D;
+}
+
+.six-screen-mob{
+    display: none;
+}
+
+.photos-place{
+    margin-left: 3.5vw;
+}
+
+.floor-two{
+    width: 30vw;
+    height: 28vw;
+    background-image: url(../img/t-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.floor-one{
+    width: 21.8vw;
+    height: 14vw;
+    margin-top: -4.9vw;
+    margin-left: 25vw;
+    background-image: url(../img/go.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.heading-main{
+    width: 37.5vw;
+}
+
+.place-floor-three{
+    width: 17.4vw;
+    height: 28vw;
+    margin-top: -14vw;
+    margin-left: 28vw;
+    background-image: url(../img/z-o.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo-cloud5-1{
+    position: absolute;
+    z-index: 1;
+    margin-top: 18.7vw;
+    margin-left: 45.6vw;
+    width: 21.5vw;
+    height: 16.9vw;
+    background-image: url(../img/cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: up-down 3s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+/*седьмой*/
+
+.seven-screen{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10vw;
+    background-color: #1F598D;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 65.1vw;
+}
+
+.form-title{
+    margin-top: -4.5vw;
+    color: #FFFFFF;
+    animation: bright 3s ease-in-out infinite;
+}
+
+.form-title-mob{
+    display: none;
+    animation: bright 3s ease-in-out infinite;
+}
+
+.tit1{
+    margin-left: 10vw;
+}
+
+.tit2{
+    margin-left: 20.3vw;
+}
+
+.tit3{
+    margin-left: 10vw;
+}
+
+.tit4{
+    margin-left: 24.9vw;
+}
+
+.tit5{
+    margin-left: 20.3vw;
+}
+
+form{
+    width: 26.6vw;
+    margin-left: 3.3vw;
+    margin-top: 24vw;
+}
+
+select, input{
+    background-color: #1F598D;
+    font-family: 'TT-Prosto-Sans-Trial-Light';
+    font-style: normal;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    width: 26.6vw;
+    margin-bottom: 1.3vw;
+    border-radius: 7vw;
+    border: 0.1vw solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 0.8vw;
+    padding-left: 2.7vw;
+    outline: none;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+input::placeholder{
+    opacity: 0.4;
+    color: #FFFFFF;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../img/Ellipse.svg") 88% / 2% no-repeat;
+}
+
+select::-ms-expand { 
+    display: none; 
+}
+
+select option{
+    background-color: #1F598D;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+.in-1{
+    margin-bottom: 5.7vw;
+}
+
+.but-4{
+    border-radius: 7vw;
+    border: 0.1vw solid #FFFFFF;
+    color: #FFFDF8;
+    height: 3vw;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    font-family: 'TT-Prosto-Sans-Trial-Bold';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7vw;
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+    margin-left: 15.8vw;
+    cursor: url(../img/Ellipse-98.svg) 11 11, auto;
+}
+
+/*восьмой*/
+
+.footer{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 14.5vw;
+    margin-bottom: 3vw;
+}
+
+.text-end{
+    color: #1F598D;
+    animation: line 2s linear infinite ;
+}
+
+@keyframes line {
+    0% {transform: translateX(-4%);}
+    50% {transform: translateX(5%);}
+    100% {transform: translateX(-4%);}
+}
